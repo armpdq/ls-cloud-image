@@ -153,7 +153,7 @@ system_upgrade() {
         echo -ne '#######################   (100%)\r'
     else
         echo -ne '#                         (5%)\r'
-        yum update -y > /dev/null 2>&1
+        yum check-update -y > /dev/null 2>&1
         echo -ne '#######################   (100%)\r'
     fi    
 }
